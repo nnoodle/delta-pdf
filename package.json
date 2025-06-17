@@ -1,0 +1,30 @@
+{
+  "name": "delta-pdf",
+  "version": "0.1.0",
+  "description": "Automated PDF Form Filler with Δ.",
+  "homepage": "https://github.com/nnoodle/delta-pdf#readme",
+  "bugs": {
+    "url": "https://github.com/nnoodle/delta-pdf/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnoodle/delta-pdf.git"
+  },
+  "license": "ISC",
+  "author": "Noodles!",
+  "type": "cljs",
+  "main": "output/delta-pdf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@ardatan/string-interpolation": "^1.2.12",
+    "jszip": "^3.10.1",
+    "pdf-lib": "^1.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "shadow-cljs": "^3.1.5"
+  }
+}
