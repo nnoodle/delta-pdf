@@ -68,7 +68,7 @@ jobs:
           # to always provision the latest version
           cli: 1.12.1.1550              # Clojure CLI based on tools.deps
       - name: Build with shadow-cljs
-        run: ${{ steps.detect-package-manager.outputs.runner }} shadow-cljs compile browser
+        run: ${{ steps.detect-package-manager.outputs.runner }} shadow-cljs release browser
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
