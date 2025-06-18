@@ -66,7 +66,7 @@ jobs:
           # Install just one or all simultaneously
           # The value must indicate a particular version of the tool, or use 'latest'
           # to always provision the latest version
-          cli: 1.10.1.693              # Clojure CLI based on tools.deps
+          cli: 1.12.0              # Clojure CLI based on tools.deps
       - name: Build with shadow-cljs
         run: ${{ steps.detect-package-manager.outputs.runner }} shadow-cljs compile browser
       - name: Upload artifact
