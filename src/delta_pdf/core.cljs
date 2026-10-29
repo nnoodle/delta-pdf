@@ -107,7 +107,7 @@
   "Map DELTAS onto PDFs formatted by TEMPLATE."
   [^PDFDocument pdf buf-pdf deltas template]
   (let [deltas (js->clj deltas)
-        d-heads (set (first deltas))
+        d-heads (first deltas)
         fields ^Array (.getFields (.getForm pdf))
         implied-template
         (->> fields

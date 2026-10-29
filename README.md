@@ -8,15 +8,17 @@ for every Δ. The browser version includes a template creator.
 
 TODO: Template Spec
 
-### CLI Invocation
-```shell
-$ delta-pdf FORM.pdf DELTAS.tsv TEMPLATE.edn
-```
-
-### Using it on the Browser
+### Using it Online
 Link here: [ΔPDF](https://nnoodle.github.io/delta-pdf/)
 
+### CLI Invocation
+```shell
+$ ./output/delta-pdf.js FORM.pdf DELTAS.tsv TEMPLATE.edn
+```
 
 ### Building
 
-TODO: Build instructions
+```shell
+$ shadow-cljs release node    # for the CLI utility
+$ shadow-cljs release browser # for the browser UI
+```
