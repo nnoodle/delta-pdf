@@ -52,7 +52,7 @@ jobs:
           node-version: "24"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Java
-        uses: actions/setup-java@6
+        uses: actions/setup-java@v6
         with:
           java-version: "23"
           distribution: "temurin"
